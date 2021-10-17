@@ -1,0 +1,209 @@
+.entryfeeContainer {
+  /* border-radius: 20px; */
+  height: 100%;
+  /* display: table; */
+  margin: auto;
+  margin-top: 10px;
+  font-size: 15px;
+  color: white;
+  font-weight: 500;
+  box-shadow: 0 0 10px rgb(93 94 95);
+  padding: 30px;
+  background-color: rgb(31, 31, 31);
+  overflow:auto;
+  width: auto;
+}
+
+.topFeeContainer {
+  display: flex;
+  margin-right: 15%;
+  margin-bottom: 30px;
+  flex-direction: row-reverse;
+}
+.btn {
+  padding-right: 20px;
+  font-weight: 600;
+}
+.successButton {
+  background-color: #83d85e;
+  color: black;
+  padding: 5px 10px 5px 10px;
+  border: 2px solid #83d85e;
+  border-radius: 5px;
+  font-weight: 500;
+  width: 100px;
+  box-shadow: 0 0 10px rgb(93 94 95);
+}
+.InfoButton {
+  background-color: #C71585;
+  /* background-color: #4834d4; */
+  color: aliceblue;
+  padding: 5px 10px 5px 10px;
+  /* border: 2px solid #4834d4; */
+  border: 2px solid #C71585;
+  width: 100px;
+  border-radius: 5px;
+  font-weight: 500;
+  box-shadow: 0 0 10px rgb(93 94 95);
+}
+.successButton:hover {
+  background-color: #4dcf16;
+  border: 2px solid #4dcf16;
+
+}
+.InfoButton:hover {
+  background-color: #f11aa3;  
+  border: 2px solid #f11aa3;
+}
+
+.options {
+  display: block;
+  text-align: center;
+  padding: 10px 20px 10px 20px;
+  color: white;
+  /* background-color: #C71585; */
+  border-radius: 50px;
+  /* box-shadow: 0 0 20px rgb(93 94 95); */
+  margin: auto;
+
+}
+.entryfeeOptions {
+  position: relative;
+  padding-left: 35px;
+  padding-right: 50px;
+  margin-bottom: 12px;
+  margin-right: 20px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  padding-right: 30px;
+}
+.entryfeeOptions input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+.entryfeeOptions span {
+  padding-right: 10px;
+}
+.entryFeeCheck {
+  position: absolute;
+  background-color: #eee;
+  border-radius: 50%;
+  padding: 10px;
+}
+.enterFeeInput{
+  /* background-color: #f0f321; */
+  background-color: whitesmoke;
+  border-radius: 10px;
+  padding: 60px 30px;
+  display: block;
+  margin: auto;
+  box-shadow: 0 0 5px rgb(93 94 95);
+
+}
+.entryfeeOptions:hover input ~ .entryFeeCheck {
+  background-color: #ccc;
+}
+
+input[type="radio"] {
+  padding: 10px;
+}
+
+.entryfeeOptions input:checked ~ .entryFeeCheck {
+  box-shadow: 0 0 10px rgb(93 94 95);
+
+  background-color: #4dcf16;
+}
+.entryFeeCheck:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+.entryfeeOptions input:checked ~ .entryFeeCheck::after {
+  display: block;
+}
+.entryfeeOptions .entryFeeCheck:after {
+  top: 6px;
+  left: 6px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: white;
+}
+
+.PaidEntry {
+  padding: 30px;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  color: black;
+}
+.enterFeeInput div {
+  padding-bottom: 10px;
+}
+
+.coin {
+  padding: 30px;
+}
+.coin input {
+  background-color: #eee;
+}
+.coinCount {
+  border: none;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0 0 18px rgb(93 94 95);
+}
+
+.movementContainer {
+  margin-top: 30px;
+  margin-right: 15%;
+  margin-left: 15%;
+}
+
+.next {
+  float: right;
+}
+
+input{
+  outline: none;
+}
+@media only screen and (max-width: 1000px) and (min-width: 500px) {
+
+  .coin {
+    margin-right: 40px;
+    display: flex;
+    padding-bottom: 20px;
+  }
+  .coin span {
+    transform: translate(50%, 22%);
+  }
+  .enterFeeInput{
+    padding: 30px;
+  }  
+}
+@media only screen and (max-width: 499px) {
+  .coin {
+    margin-right: 40px;
+    display: flex;
+    padding-bottom: 20px;
+  }
+  .coin span {
+    transform: translate(50%, 22%);
+  }
+  .topbarLeft{
+    margin-left: 0%;
+    padding-left: 10px;
+    flex: 3;
+  }
+  .enterFeeInput{
+    padding: 10px;
+  }  
+  .entryfeeContainer {
+    height: auto;
+    /* display: block; */
+  
+}}
