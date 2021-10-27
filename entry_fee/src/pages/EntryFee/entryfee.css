@@ -10,7 +10,7 @@
   box-shadow: 0 0 10px rgb(93 94 95);
   padding: 30px;
   background-color: rgb(31, 31, 31);
-  overflow:auto;
+  overflow: auto;
   width: auto;
 }
 
@@ -35,12 +35,12 @@
   box-shadow: 0 0 10px rgb(93 94 95);
 }
 .InfoButton {
-  background-color: #C71585;
+  background-color: #c71585;
   /* background-color: #4834d4; */
   color: aliceblue;
   padding: 5px 10px 5px 10px;
   /* border: 2px solid #4834d4; */
-  border: 2px solid #C71585;
+  border: 2px solid #c71585;
   width: 100px;
   border-radius: 5px;
   font-weight: 500;
@@ -49,10 +49,9 @@
 .successButton:hover {
   background-color: #4dcf16;
   border: 2px solid #4dcf16;
-
 }
 .InfoButton:hover {
-  background-color: #f11aa3;  
+  background-color: #f11aa3;
   border: 2px solid #f11aa3;
 }
 
@@ -65,7 +64,6 @@
   border-radius: 50px;
   /* box-shadow: 0 0 20px rgb(93 94 95); */
   margin: auto;
-
 }
 .entryfeeOptions {
   position: relative;
@@ -94,7 +92,7 @@
   border-radius: 50%;
   padding: 10px;
 }
-.enterFeeInput{
+.enterFeeInput {
   /* background-color: #f0f321; */
   background-color: whitesmoke;
   border-radius: 10px;
@@ -102,7 +100,6 @@
   display: block;
   margin: auto;
   box-shadow: 0 0 5px rgb(93 94 95);
-
 }
 .entryfeeOptions:hover input ~ .entryFeeCheck {
   background-color: #ccc;
@@ -168,11 +165,11 @@ input[type="radio"] {
   float: right;
 }
 
-input{
+input {
   outline: none;
 }
-@media only screen and (max-width: 1000px) and (min-width: 500px) {
 
+@media only screen and (max-width: 1000px) and (min-width: 500px) {
   .coin {
     margin-right: 40px;
     display: flex;
@@ -181,9 +178,9 @@ input{
   .coin span {
     transform: translate(50%, 22%);
   }
-  .enterFeeInput{
+  .enterFeeInput {
     padding: 30px;
-  }  
+  }
 }
 @media only screen and (max-width: 499px) {
   .coin {
@@ -194,16 +191,17 @@ input{
   .coin span {
     transform: translate(50%, 22%);
   }
-  .topbarLeft{
+  .topbarLeft {
     margin-left: 0%;
     padding-left: 10px;
     flex: 3;
   }
-  .enterFeeInput{
+  .enterFeeInput {
     padding: 10px;
-  }  
+  }
   .entryfeeContainer {
     height: auto;
     /* display: block; */
-  
-}}
+  }
+}
+
